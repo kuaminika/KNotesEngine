@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="/css/bootstrap.5.3.3.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title><%= title %></title>
+</head>
+<body> 
+    <div class="container"></div>
+    <main class="container">
+        <div class="row g-5">
+            <div class="col-md-8">
+                <article>
+
+                    <%- reactCheatSheet%>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <% headings.forEach(function(item,index){ %>
+                        <li> <%= item.text %> </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary"></footer>
+</body>
+</html>
